@@ -22,3 +22,22 @@ messages = [
     "'You want to be productive, but also want to relax and do nothing'"
 ];
 
+let fetch_msg = (messages) => {
+    let random_index = Math.floor(Math.random() * messages.length);
+    return messages[random_index];
+}
+// const prompt = require('prompt-sync')({sigint: true}); // sigint: true allows Ctrl+C to exit
+// let game = prompt("Welcome to the 'Relatable Moments' game! Type 'play' to get a random relatable moment or 'exit' to quit.");
+
+// while (game.toLowerCase() !== 'exit') {
+//     if (game.toLowerCase() === 'play') {
+//         console.log(fetch_msg(messages));
+//         console.log();
+//         game = input("Type 'play' to get another relatable moment or 'exit' to quit.");
+//     } else {
+//         console.log("Invalid input. Please type 'play' to get a random relatable moment or 'exit' to quit.");
+//     }
+// }
+
+console.log(fetch_msg(messages));
+console.log();
